@@ -14,9 +14,50 @@ npm run dev
 yarn dev
 ```
 
+Before using this app, you must first create database with users:
+
+  ``` CREATE DATABASE IF NOT EXISTS Users; ```
+
+After that, create a table users:
+  
+``` 
+  ...
+  CREATE TABLE users (
+	id INT AUTO_INCREMENT,
+    user_name VARCHAR(20) NOT NULL UNIQ NOT NULL UNIQUE,
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    password TEXT NOT NULL,
+    PRIMARY KEY(id)
+  ); 
+  ...
+```
+  
+  Now, insert some data into adatabase:
+  
+```...
+    INSERT INTO users (user_name, email, password) VALUES ('Daniel', 'daniel@mail.com', your_password);
+    ...
+```
+  
+  Inside your root folder, create environment file (.env.local) file with following content:
+
+```
+MYSQL_HOST=localhost
+MYSQL_USER=root
+MYSQL_DATABASE=Users
+MYSQL_PASSWORD=...
+
+JWT_KEY=26b0053c-de99-4945-8086-5b6fa0bed42b
+```
+  Here, all four MYSQL_ environment variables are intialized according your MySQL RDBMS configuration on your mashine. 
+  So, change all these values with corresponding values on your local mashine. 
+  JWT_KEY is a just secret key which you can create by your own. You can create one by [Online GUID / UUID Generator](https://www.guidgenerator.com/).
+  
+
 - *Open your local server host [http://localhost:3000](http://localhost:3000) inside your browser to see the welcome page.*
 
-- You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
