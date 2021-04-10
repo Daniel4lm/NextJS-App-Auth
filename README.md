@@ -1,15 +1,16 @@
 
-## JWT User Authentication in Next.js Web Application(implemented with JSON Web Tokens) by using cookies
+## **JWT User Authentication in Next.js Web Application(implemented with JSON Web Tokens) by using cookies**
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) boilerplate startup.
 
-## Getting Started
+### **Getting Started**
 
 You can run this app in the development server by using next commands:
-```
+
+```**
 npm run dev
 # or
-yarn dev
+yarn dev**
 ```
 
 Open your local server host [http://localhost:3000](http://localhost:3000) inside your browser to see the welcome page.
