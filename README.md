@@ -47,9 +47,9 @@ After that, create a table users:
 MYSQL_HOST=localhost
 MYSQL_USER=root
 MYSQL_DATABASE=Users
-MYSQL_PASSWORD=...
+MYSQL_PASSWORD=***
 
-JWT_KEY=26b0053c-de99-4945-8086-5b6fa0bed42b
+JWT_KEY=26b*****-****-****-****-*****0bed42b
 ```
   Here, all four ***MYSQL_*** environment variables are intialized according your MySQL RDBMS configuration on your mashine. 
   So, change all these values with corresponding values on your local mashine. 
