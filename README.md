@@ -8,11 +8,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 You can run this app in the development server by using next commands:
 
+
 ```
 npm run dev
 # or
 yarn dev
 ```
+
 
 Before using this app, you must first create database with users:
 
@@ -39,7 +41,7 @@ After that, create a table users:
     ...
 ```
   
-  Inside your root folder, create environment file (.env.local) file with following content:
+  Inside your root folder, create environment file (.env.local) with the following content:
 
 ```
 MYSQL_HOST=localhost
@@ -49,9 +51,9 @@ MYSQL_PASSWORD=...
 
 JWT_KEY=26b0053c-de99-4945-8086-5b6fa0bed42b
 ```
-  Here, all four MYSQL_ environment variables are intialized according your MySQL RDBMS configuration on your mashine. 
+  Here, all four ***MYSQL_*** environment variables are intialized according your MySQL RDBMS configuration on your mashine. 
   So, change all these values with corresponding values on your local mashine. 
-  JWT_KEY is a just secret key which you can create by your own. You can create one by [Online GUID / UUID Generator](https://www.guidgenerator.com/).
+  ***JWT_KEY*** is a just secret key which you can create by your own. You can create one by [Online GUID / UUID Generator](https://www.guidgenerator.com/).
   
 
 - *Open your local server host [http://localhost:3000](http://localhost:3000) inside your browser to see the welcome page.*
