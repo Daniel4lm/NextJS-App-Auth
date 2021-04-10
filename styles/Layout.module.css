@@ -1,0 +1,9 @@
+
+.layout_content {
+    width: 100%;
+    min-height: 100vh;
+    /*background: pink;*/
+    display: flex;
+    flex-direction: column;
+}
+
