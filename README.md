@@ -1,16 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### JWT User Authentication in Next.js Web Application(implemented with JSON Web Tokens) by using cookies
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) boilerplate startup.
 
 ## Getting Started
 
-First, run the development server:
+You can run this app in the development server by using next commands:
 
-```bash
 npm run dev
 # or
 yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your local server host [http://localhost:3000](http://localhost:3000) inside your browser to see the welcome page.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
